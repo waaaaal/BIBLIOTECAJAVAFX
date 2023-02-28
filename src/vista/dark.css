@@ -1,0 +1,157 @@
+/* Configuración del botón de menú */
+.text-field-rounded {
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+
+#labelnombre, #labelautor {
+    -fx-background-color: #f2f2f2;
+    -fx-background-radius: 20;
+    -fx-padding: 10px;
+}
+
+#label1:hover, #label2:hover {
+    -fx-background-color: #ccc;
+}
+.menu-bar .container .menu-button {
+    -fx-background-color: #fdffd7;
+    -fx-background-radius: 20px;
+}
+
+/* Configuración del botón de menú al pasar el ratón */
+.menu-bar .container .menu-button:hover,
+.menu-bar .container .menu-button:focused,
+.menu-bar .container .menu-button:showing {
+    -fx-background-color: #eceeaa;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-background-radius: 20px;
+}
+
+
+.menu-bar:hover {
+  background-color: transparent;
+}
+.menu-bar {
+    -fx-background-color: rgba(198,189,146,255);
+    -fx-background-color: transparent;
+
+}
+.menu-bar .label {
+    -fx-text-fill:rgba(252,254,214,255);
+     -fx-text-fill: #917a44;
+}
+
+
+.root {
+    -fx-background-image: url("/img/130.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+    -fx-background-size: cover;
+    -fx-background-attachment: fixed;
+}
+
+.button {
+  -fx-background-color: #FFFFFF;
+  -fx-border-color: #CCCCCC;
+  -fx-border-width: 1px;
+  -fx-border-radius: 2px;
+  -fx-text-fill: #666666;
+  -fx-font-size: 16px;
+  -fx-font-weight: bold;
+  -fx-padding: 8px 16px;
+}
+
+.button:hover {
+  -fx-background-color: #F2F2F2;
+}
+
+.button:pressed {
+  -fx-background-color: #E2E2E2;
+}
+
+.button:disabled {
+  -fx-opacity: 0.5;
+}
+
+.button:default {
+  -fx-background-color: #007AFF;
+  -fx-text-fill: #FFFFFF;
+  -fx-border-color: #007AFF;
+}
+
+.button:default:hover {
+  -fx-background-color: #0065D6;
+  -fx-border-color: #0065D6;
+}
+
+.button:default:pressed {
+  -fx-background-color: #005CC5;
+  -fx-border-color: #005CC5;
+}
+
+.table-cell {
+-fx-padding: 0.5em 0.5em 0.1em 0.3em;
+-fx-border-color: -fx-box-border -fx-box-border transparent transparent;
+-fx-font: 13px "Segoe UI";
+-fx-border-insets: 0;
+}
+
+.table-cell:hover {
+-fx-background-color: #666666;
+}
+
+.table-row-cell:empty,
+.table-cell:empty:hover {
+-fx-background-color: #F2F2F2;
+}
+
+.table-row-cell:empty .table-cell {
+-fx-border-width: 0px;
+}
+
+.table-view:row-selection .table-row-cell:filled:hover {
+-fx-background-color: rgba(128, 128, 128, 0.25);
+}
+
+.table-view:row-selection .table-row-cell:filled:selected:hover {
+-fx-background-color: rgba(128, 128, 128, 0.90);
+}
+
+.table-view:row-selection .table-row-cell:filled:selected {
+-fx-background-color: rgba(128, 128, 128, 0.65);
+}
+
+.table-view,
+.table-view:focused {
+-fx-background-color: transparent,-fx-box-border,-fx-control-inner-background;
+-fx-background-insets: -1.4, 0, 1;
+-fx-background-radius: 1.4, 0, 0;
+}
+
+.table-view .column-header .label {
+-fx-text-fill: #333333;
+-fx-alignment: CENTER;
+}
+
+.table-view .column-header:hover {
+-fx-background-color: #F2F2F2;
+}
+
+.table-view .column-header,
+.table-view .filler {
+-fx-background-color: #F2F2F2;
+-fx-size: 45;
+-fx-border-color: -fx-box-border;
+-fx-border-width: 0 1 3 0;
+-fx-border-insets: 0;
+}
+
+.table-view .column-header-background {
+-fx-background-color: transparent;
+}
+
+.table-view .show-hide-columns-button {
+-fx-background-color: #F2F2F2;
+-fx-border-color: -fx-box-border;
+-fx-border-insets: 0;
+}

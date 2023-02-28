@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="681.0" prefWidth="1197.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXML_Controller">
+   <children>
+      <Pane layoutX="3.0" prefHeight="681.0" prefWidth="1204.0">
+         <children>
+            <MenuBar layoutX="-7.0" layoutY="-5.0" prefHeight="20.0" prefWidth="1210.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem fx:id="aniadirusuario" mnemonicParsing="false" onAction="#dardealta" text="Close" />
+                        <MenuItem fx:id="alta1" mnemonicParsing="false" onAction="#dardealta" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <Label layoutX="36.0" layoutY="81.0" text="Busqueda de usuario" />
+            <Label layoutX="40.0" layoutY="136.0" text="Nombre" />
+            <Label layoutX="42.0" layoutY="191.0" text="DNI" />
+            <TextField fx:id="nombretext" layoutX="139.0" layoutY="130.0" onAction="#filtrar_nombre" />
+            <TextField fx:id="dni_text" layoutX="139.0" layoutY="185.0" onAction="#filtrar_dni" />
+            <Label layoutX="44.0" layoutY="372.0" text="Busqueda de libro " />
+            <Label layoutX="59.0" layoutY="422.0" prefHeight="27.0" prefWidth="94.0" text="Autor" />
+            <Label layoutX="57.0" layoutY="479.0" text="Codigo" />
+            <TextField fx:id="text_autor" layoutX="132.0" layoutY="416.0" onAction="#filtrar_autor" />
+            <TextField fx:id="text_codigo" layoutX="132.0" layoutY="473.0" onAction="#filtrar_codigo" />
+            <Button fx:id="prestamo" layoutX="73.0" layoutY="577.0" mnemonicParsing="false" onAction="#dale" prefHeight="27.0" prefWidth="133.0" text="PRESTAMO" />
+            <Button layoutX="244.0" layoutY="577.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="133.0" text="DEVOLUCION" />
+            <TableView fx:id="tablitaa" layoutX="430.0" layoutY="130.0" prefHeight="248.0" prefWidth="725.0">
+              <columns>
+                <TableColumn fx:id="nombre" prefWidth="140.0" text="NOMBRE" />
+                <TableColumn fx:id="dni" prefWidth="40.0" text="DNI" />
+                  <TableColumn fx:id="nota" prefWidth="126.0" text="nota" />
+                  <TableColumn fx:id="libro1" prefWidth="118.0" text="LIBRO1" />
+                  <TableColumn fx:id="libro2" prefWidth="127.0" text="LIBRO2" />
+                  <TableColumn fx:id="libro3" prefWidth="167.0" text="LIBRO2" />
+              </columns>
+            </TableView>
+            <TableView fx:id="tabla2" layoutX="431.0" layoutY="406.0" prefHeight="235.0" prefWidth="725.0">
+              <columns>
+                <TableColumn fx:id="codigo" prefWidth="129.0" text="CODIGO" />
+                <TableColumn fx:id="titulo" prefWidth="155.0" text="TITULO" />
+                  <TableColumn fx:id="autor" prefWidth="127.0" text="AUTOR" />
+                  <TableColumn fx:id="estado" prefWidth="133.0" text="ESTADO" />
+                  <TableColumn fx:id="fechaprestamo" prefWidth="180.0" text="FECHA PRESTAMO" />
+              </columns>
+            </TableView>
+            <Button layoutX="622.0" layoutY="75.0" mnemonicParsing="false" text="Actualizar Usuario" />
+            <Button layoutX="854.0" layoutY="75.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="166.0" text="Actualizar Libro" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

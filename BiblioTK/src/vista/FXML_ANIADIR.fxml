@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXML_Controller">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+            <Label layoutX="92.0" layoutY="59.0" text="nombre" />
+            <Label layoutX="92.0" layoutY="114.0" text="dni" />
+            <Label layoutX="84.0" layoutY="164.0" text="fecha de alta" />
+            <Label layoutX="84.0" layoutY="200.0" />
+            <TextField fx:id="nombreañadir" layoutX="186.0" layoutY="53.0" />
+            <TextField fx:id="dniañadir" layoutX="186.0" layoutY="114.0" />
+            <TextField fx:id="fechadealtaañadir" layoutX="208.0" layoutY="171.0" />
+            <Button fx:id="botonañadir" layoutX="169.0" layoutY="263.0" mnemonicParsing="false" onAction="#añadir" text="añadir" />
+            <Button fx:id="botoncancelar" layoutX="292.0" layoutY="263.0" mnemonicParsing="false" onAction="#cancelar" text="cancelar" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

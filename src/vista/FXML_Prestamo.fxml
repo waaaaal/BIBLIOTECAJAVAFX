@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="688.0" prefWidth="562.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXML_PrestamoController">
+   <children>
+      <Label layoutX="196.0" layoutY="85.0" text="PRESTAMO">
+         <font>
+            <Font name="Arial Italic" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="123.0" layoutY="199.0" text="NOMBRE" />
+      <Label layoutX="145.0" layoutY="272.0" text="DNI" />
+      <Label fx:id="etiqueta1" layoutX="145.0" layoutY="413.0" text="LIBRO1" />
+      <Label fx:id="etiqueta2" layoutX="145.0" layoutY="466.0" text="LIBRO2" />
+      <Label fx:id="etiqueta3" layoutX="145.0" layoutY="524.0" text="LIBRO3" />
+      <TextField fx:id="textnombre" layoutX="228.0" layoutY="193.0" />
+      <TextField fx:id="textdni" layoutX="228.0" layoutY="266.0" />
+      <TextField fx:id="textlibro1" layoutX="228.0" layoutY="407.0" />
+      <TextField fx:id="textlibro2" layoutX="228.0" layoutY="460.0" />
+      <TextField fx:id="textlibro3" layoutX="228.0" layoutY="518.0" />
+      <Line endX="300.0" layoutX="169.0" layoutY="374.0" startX="-100.0" stroke="#aeabab" />
+      <Button fx:id="botonaceptar" layoutX="101.0" layoutY="603.0" mnemonicParsing="false" onAction="#aceptar" prefHeight="39.0" prefWidth="187.0" text="aceptar" />
+      <Button fx:id="botoncancelar" layoutX="316.0" layoutY="603.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="39.0" prefWidth="136.0" text="cancelar" />
+   </children>
+</AnchorPane>
